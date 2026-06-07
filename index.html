@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product with Bharath | Product Studio</title>
+  <meta name="description" content="Product with Bharath is a product studio specializing in web products, UI/UX design, and brand strategy. Run by Bharath S.">
+  
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons for clean, modern iconography -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Interactive Custom Cursor Glow (Subtle, modern aesthetic) -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Header Section -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="logoLink">
+        <span class="logo-accent">Product</span> with Bharath<span class="logo-dot">.</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html#hero" class="nav-link active">Home</a></li>
+          <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="journey.html" class="nav-link">Learning Journey</a></li>
+          <li><a href="blog.html" class="nav-link">Blog / Insights</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle (Bonus interaction for the user) -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        
+        <a href="#contact" class="btn btn-primary btn-nav">Get in Touch</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge fade-in">
+            <span class="badge-dot"></span> Personal Product Brand
+          </div>
+          <h1 class="hero-title fade-in">Product with Bharath</h1>
+          <p class="hero-subtitle fade-in">Learning Product Management One Product at a Time</p>
+          <p class="hero-subtitle fade-in">
+            I document my journey of becoming a Product Manager, share real product case studies, break down product strategies, and help beginners understand Product Management in a simple way.
+          </p>
+          <div class="hero-ctas fade-in">
+            <a href="case-studies.html" class="btn btn-primary">Explore Case Studies <i data-lucide="arrow-right"></i></a>
+            <a href="resources.html" class="btn btn-secondary">View Resources</a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in" aria-hidden="true">
+          <div class="visual-card-wrapper">
+            <div class="visual-glow"></div>
+            <div class="visual-card">
+              <div class="card-header">
+                <div class="address-bar">productwithbharath</div>
+              </div>
+              <div class="card-body">
+                <div class="typing-container">
+                  <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+                </div>
+                <div class="card-lines">
+                  <div class="line w-80"></div>
+                  <div class="line w-60"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning Stats bar -->
+      <div class="hero-stats">
+        <div class="container stats-container">
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="12">0</h3>
+            <p class="stat-label">Case Studies Published</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="8">0</h3>
+            <p class="stat-label">Product Frameworks Shared</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="40">0</h3>
+            <p class="stat-label">Resources Curated</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="2026">0</h3>
+            <p class="stat-label">Learning Journey Since</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Why I Started Product with Bharath</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-info">
+            <p class="lead-text">
+              I am a Computer Science student passionate about Product Management and AI. I created Product with Bharath to document my learning journey, share insights, and make Product Management easier for students and beginners.
+            </p>
+
+            <div class="values-grid">
+              <div class="value-item">
+                <div class="value-icon"><i data-lucide="book-open"></i></div>
+                <div>
+                  <h4>Educational Focus</h4>
+                  <p>Content geared toward students and beginners learning product skills.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon"><i data-lucide="layers"></i></div>
+                <div>
+                  <h4>Practical Case Studies</h4>
+                  <p>Real product breakdowns, frameworks and clear takeaways you can apply.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual">
+            <div class="image-box">
+              <div class="image-glow"></div>
+              <div class="grid-pattern"></div>
+              <div class="stats-card">
+                <span class="stats-title">Started</span>
+                <span class="stats-val">2026</span>
+                <span class="stats-trend">Personal Learning Hub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & What You Will Find -->
+    <section id="mission" class="services-section scroll-reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Mission</span>
+          <h2 class="section-title">My Mission</h2>
+          <div class="title-bar center"></div>
+          <p class="section-subtitle">
+            To help students learn Product Management through practical case studies, product breakdowns, frameworks, and real-world examples instead of complex theory.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="book-open" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">Product Case Studies</h3>
+            <p class="service-desc">Deep dives into popular products and platforms with clear takeaways for beginners.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="zap" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">Product Thinking</h3>
+            <p class="service-desc">Learn how great products are built and how to think like a PM.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="layers" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">PM Frameworks</h3>
+            <p class="service-desc">Simple frameworks explained for beginners.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="cpu" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">AI & Technology</h3>
+            <p class="service-desc">Insights about AI products and innovation relevant to PMs.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="archive" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">Learning Resources</h3>
+            <p class="service-desc">Curated books, courses, and tools to help your PM journey.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="user-check" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">Career Guidance</h3>
+            <p class="service-desc">Advice for students exploring Product Management roles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work/Portfolio Section -->
+    <section id="work" class="work-section scroll-reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <!-- Portfolio Filters -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="development">Development</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+          <button class="filter-btn" data-filter="strategy">Branding & Strategy</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Project 1: Development -->
+          <div class="portfolio-item" data-category="development">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-details">
+                    <span class="project-category">Fullstack Development</span>
+                    <h4 class="project-name">Nova Crypto Platform</h4>
+                    <p class="project-brief">A highly secure real-time cryptocurrency exchange dashboard with interactive charts.</p>
+                    <button class="btn btn-primary btn-sm view-details-btn" data-project="nova">View Project</button>
+                  </div>
+                </div>
+                <!-- Abstract Design representing project visual -->
+                <div class="project-visual-bg bg-neon-1">
+                  <div class="visual-accent-line"></div>
+                  <i data-lucide="line-chart" class="project-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Design -->
+          <div class="portfolio-item" data-category="design">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-details">
+                    <span class="project-category">UI/UX Design</span>
+                    <h4 class="project-name">Aero Workspace Mobile App</h4>
+                    <p class="project-brief">Clean, modern spatial workspace finder app focusing on minimal aesthetics and gestures.</p>
+                    <button class="btn btn-primary btn-sm view-details-btn" data-project="aero">View Project</button>
+                  </div>
+                </div>
+                <div class="project-visual-bg bg-neon-2">
+                  <div class="visual-accent-circle"></div>
+                  <i data-lucide="smartphone" class="project-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Strategy -->
+          <div class="portfolio-item" data-category="strategy">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-details">
+                    <span class="project-category">Branding & Strategy</span>
+                    <h4 class="project-name">Helios Smart Home Brand</h4>
+                    <p class="project-brief">Brand identity system, strategy, packaging and digital roll-out for a solar automation suite.</p>
+                    <button class="btn btn-primary btn-sm view-details-btn" data-project="helios">View Project</button>
+                  </div>
+                </div>
+                <div class="project-visual-bg bg-neon-3">
+                  <div class="visual-accent-dots"></div>
+                  <i data-lucide="sun" class="project-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Development -->
+          <div class="portfolio-item" data-category="development">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-details">
+                    <span class="project-category">Web Applications</span>
+                    <h4 class="project-name">Quill Content Editor</h4>
+                    <p class="project-brief">AI-powered web editor for content writers featuring high-speed autosave and cloud sync.</p>
+                    <button class="btn btn-primary btn-sm view-details-btn" data-project="quill">View Project</button>
+                  </div>
+                </div>
+                <div class="project-visual-bg bg-neon-4">
+                  <div class="visual-accent-slash"></div>
+                  <i data-lucide="feather" class="project-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Design -->
+          <div class="portfolio-item" data-category="design">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-details">
+                    <span class="project-category">Web Design</span>
+                    <h4 class="project-name">Lumina Fashion Store</h4>
+                    <p class="project-brief">Immersive 3D/interactive layout showcasing apparel with micro-interactions.</p>
+                    <button class="btn btn-primary btn-sm view-details-btn" data-project="lumina">View Project</button>
+                  </div>
+                </div>
+                <div class="project-visual-bg bg-neon-5">
+                  <div class="visual-accent-box"></div>
+                  <i data-lucide="shopping-bag" class="project-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Strategy -->
+          <div class="portfolio-item" data-category="strategy">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-details">
+                    <span class="project-category">Corporate Identity</span>
+                    <h4 class="project-name">Vertex Logistics Rebrand</h4>
+                    <p class="project-brief">A global shipping and sorting corporation rebrand focusing on motion and logistics metrics.</p>
+                    <button class="btn btn-primary btn-sm view-details-btn" data-project="vertex">View Project</button>
+                  </div>
+                </div>
+                <div class="project-visual-bg bg-neon-6">
+                  <div class="visual-accent-arrows"></div>
+                  <i data-lucide="package" class="project-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team section removed — solo founder run: Bharath S -->
+
+    <!-- Testimonials / Social Proof (Extra touch of premium design) -->
+    <section class="testimonials-section scroll-reveal">
+      <div class="container text-center">
+        <span class="section-tag">Client Reviews</span>
+        <h2 class="section-title">Trusted by industry leaders</h2>
+        <div class="title-bar center"></div>
+        
+        <div class="testimonial-carousel">
+          <div class="testimonial-slide active">
+            <p class="quote">"Product with Bharath built a web experience for us that skyrocketed our client sign-ups by 40%. The design is clean, fast, and remarkably robust."</p>
+            <div class="client-meta">
+              <div class="client-avatar">A</div>
+              <div>
+                <h5 class="client-name">Alexander Wright</h5>
+                <p class="client-title">CTO, Nova Finance</p>
+              </div>
+            </div>
+          </div>
+          <!-- More slides can be controlled dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Ignite Your Next Project</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3 class="info-title">Have a project in mind? We'd love to chat.</h3>
+            <p class="info-desc">
+              Whether you are an established enterprise or an ambitious startup, we are ready to take your digital experience to the next level. Let's form something brilliant.
+            </p>
+            
+            <div class="contact-details-list">
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <span class="detail-label">Email Us</span>
+                  <a href="mailto:hello@productwithbharath.digital" class="detail-value">hello@productwithbharath.digital</a>
+                </div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <span class="detail-label">Call Us</span>
+                  <a href="tel:+18005558658" class="detail-value">+1 (800) 555-VOLT</a>
+                </div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <span class="detail-label">Headquarters</span>
+                  <span class="detail-value">San Francisco, CA & Remote</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="formName" class="form-label">Full Name</label>
+                <div class="input-wrapper">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="formName" name="name" class="form-input" placeholder="John Doe" required>
+                </div>
+                <span class="error-message" id="nameError">Name is required</span>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail" class="form-label">Email Address</label>
+                <div class="input-wrapper">
+                  <i data-lucide="mail" class="input-icon"></i>
+                  <input type="email" id="formEmail" name="email" class="form-input" placeholder="john@example.com" required>
+                </div>
+                <span class="error-message" id="emailError">Please enter a valid email</span>
+              </div>
+
+              <div class="form-group">
+                <label for="formService" class="form-label">What do you need?</label>
+                <div class="input-wrapper">
+                  <i data-lucide="settings" class="input-icon"></i>
+                  <select id="formService" name="service" class="form-input form-select" required>
+                    <option value="" disabled selected>Select a service...</option>
+                    <option value="web-design">Web Design & UI/UX</option>
+                    <option value="development">Fullstack Development</option>
+                    <option value="branding">Brand & Identity Strategy</option>
+                    <option value="marketing">Performance Marketing</option>
+                  </select>
+                </div>
+                <span class="error-message" id="serviceError">Please select a service</span>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">Tell us about your project</label>
+                <textarea id="formMessage" name="message" class="form-input form-textarea" rows="4" placeholder="Briefly describe what you'd like us to create..." required></textarea>
+                <span class="error-message" id="messageError">Please describe your project</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                Send Inquiry <i data-lucide="send" class="btn-icon-right"></i>
+              </button>
+            </form>
+
+            <!-- Success Alert -->
+            <div class="form-success-message" id="formSuccess">
+              <div class="success-icon-wrapper">
+                <i data-lucide="check-circle-2"></i>
+              </div>
+              <h3>Message Sent Successfully!</h3>
+              <p>Thank you for reaching out. I will contact you within the next 4 hours.</p>
+              <button class="btn btn-secondary btn-sm" id="formResetBtn">Send Another Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-accent">Product</span> with Bharath<span class="logo-dot">.</span>
+        </a>
+        <p class="brand-desc">
+          Building high-performance digital spaces with bold aesthetic design and clean engineering.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn"><i data-lucide="twitter"></i></a>
+          <a href="#" class="social-btn"><i data-lucide="instagram"></i></a>
+          <a href="#" class="social-btn"><i data-lucide="linkedin"></i></a>
+          <a href="#" class="social-btn"><i data-lucide="github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Studio</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#work">Case Studies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Web Design</a></li>
+          <li><a href="#services">Development</a></li>
+          <li><a href="#services">Brand Strategy</a></li>
+          <li><a href="#services">Conversion Optimization</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col newsletter-col">
+        <h4 class="footer-heading">Stay Connected</h4>
+        <p class="newsletter-desc">Subscribe for design inspiration and industry audits.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required class="newsletter-input">
+          <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i data-lucide="chevron-right"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 Product with Bharath. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal (Extra Interactive Experience) -->
+  <div class="modal" id="projectModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body" id="modalBody">
+        <!-- Content injected dynamically via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize lucide icons early for quick styling
+    lucide.createIcons();
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>

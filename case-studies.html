@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies — Product with Bharath</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-theme">
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><span class="logo-accent">Product</span> with Bharath<span class="logo-dot">.</span></a>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html#hero" class="nav-link">Home</a></li>
+          <li><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="journey.html" class="nav-link">Learning Journey</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="work-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Case Studies</span>
+          <h2 class="section-title">Product Case Study Library</h2>
+          <div class="title-bar"></div>
+          <p class="section-subtitle">Select a product to read a structured case study with product overview, user problems, journeys, and recommendations.</p>
+        </div>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="instagram">Instagram</button>
+          <button class="filter-btn" data-filter="netflix">Netflix</button>
+          <button class="filter-btn" data-filter="swiggy">Swiggy</button>
+          <button class="filter-btn" data-filter="whatsapp">WhatsApp</button>
+          <button class="filter-btn" data-filter="spotify">Spotify</button>
+          <button class="filter-btn" data-filter="zomato">Zomato</button>
+        </div>
+
+        <div class="portfolio-grid" id="caseGrid">
+          <!-- Example Case Study Card -->
+          <div class="portfolio-item" data-category="instagram">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-details">
+                    <h4 class="project-name">Instagram — Feed & Reels Deep Dive</h4>
+                    <p class="project-brief">Explore product goals, user journeys, pain points, and feature recommendations.</p>
+                    <a href="case-study-instagram.html" class="btn btn-primary btn-sm">Read Case Study</a>
+                  </div>
+                </div>
+                <div class="project-visual-bg bg-neon-2">
+                  <i data-lucide="image" class="project-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- More cards can be added -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 Product with Bharath</p>
+      <div class="footer-bottom-links">
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons()</script>
+  <script src="main.js"></script>
+</body>
+</html>
